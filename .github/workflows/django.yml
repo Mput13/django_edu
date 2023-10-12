@@ -27,8 +27,8 @@ jobs:
         pip install -r requirements/dev.txt
     - name: Run Tests
       run: |
-        ./lyceum/python manage.py test homepage
-        ./lyceum/python manage.py test category
-        ./lyceum/python manage.py test about
+        python ./lyceum/manage.py test homepage
+        python ./lyceum/manage.py test category
+        python ./lyceum/manage.py test about
 
 
